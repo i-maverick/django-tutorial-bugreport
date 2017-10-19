@@ -18,7 +18,7 @@
             <td><a href="{% url 'detail' ticket.pk %}">{{ ticket.title }}</a></td>
             <td>{{ ticket.created|date }}</td>
             <td>{{ ticket.user }}</td>
-            <td>{{ ticket.closed|yesno:"CLOSED, OPENED" }}</td>
+            <td>{{ ticket.closed|yesno:"Closed, Open" }}</td>
         </tr>
         {% empty %}
         <tr>

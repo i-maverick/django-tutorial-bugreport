@@ -11,8 +11,8 @@ Your username and password didn't match. Please try again.</div>
 <form class="form-signin" role="form" action="{% url 'login' %}" method="post" >
 {% csrf_token %}
 <h1>Please sign in</h1>
-{{ form.username|add_attributes:'class:form-control,placeholder:Username' }}
-{{ form.password|add_attributes:'class:form-control,placeholder:Password' }}
+{{ form.username|css:'class:form-control,placeholder:Username' }}
+{{ form.password|css:'class:form-control,placeholder:Password' }}
 <button class="btn btn-lg btn-primary btn-block">Sign in</button>
 </form>
 

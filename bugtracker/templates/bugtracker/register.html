@@ -16,7 +16,7 @@
         {{ field.errors }}</div>
         {% endif %}
         {{ field.label_tag }}
-        {{ field|add_attributes:"form-control" }}
+        {{ field|css:"form-control" }}
         </div>
       {% endfor %}
       <button class="btn btn-lg btn-primary btn-block">Register</button>
